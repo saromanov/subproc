@@ -8,7 +8,7 @@ import sys
 
 from pexpect.popen_spawn import PopenSpawn
 
-TIMEOUT = 30
+TIMEOUT = 60
 
 class Command(object):
     def __init__(self, cmd, timeout=TIMEOUT):
