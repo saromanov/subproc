@@ -81,7 +81,7 @@ class Command(object):
     def std_in(self):
         return self.subprocess.stdin
 
-    def run(self, block=True, binary=False, cwd=None, env=None, args=None):
+    def run(self, block=True, binary=False, cwd=None, env=None, args=[]):
         self.blocking = block
         self.subprocess = subprocess.Popen(args)
         self.was_run = True
